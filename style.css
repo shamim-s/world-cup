@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+/* -----------------------------------------------------------------------
+----------------------------Main Header ------------------------------------ */
+main{
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+header{
+    background-color: #161616;
+    border-radius: 30px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.header-info{
+    width: 50%;
+    margin-left: 100px;
+}
+.header-image{
+    width: 50%;
+}
+/*---------------------------------------------------------------------
+------------- top text and paragraph------------------------------------ */
+.container .header-info .section-title{
+    font-size: 70px;
+    color: #FFFF;
+    font-weight: 700;
+    max-width: 500px;
+    margin-top: 110px;
+}
+.container .header-info .section-detail{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFF;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*------------------------------------------------------------------------
+----------- top player image -------------------------------------------- */
+.header-image img{
+    width: 540px;
+    height: 540px;
+    margin-top: 80px;
+    margin-right: 20px;
+}
+/* --------------------------------------------------------------------------
+------------Top section button---------------------------------------  */
+.btn-1{
+    background-color: #DD0000;
+    color: #FFFF;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 110px;
+}
+/*----------------------------------------------------------------------------
+--------------------- Section Two Upcoming matches --------------------------- */
