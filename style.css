@@ -6,16 +6,19 @@
 }
 /* -----------------------------------------------------------------------
 ----------------------------Main Header ------------------------------------ */
-main{
+.main-body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    overflow: hidden;
 }
 header{
     background-color: #161616;
     border-radius: 30px;
+    margin-bottom: 120px;
+    overflow: hidden;
 }
 .container{
     width: 100%;
@@ -39,6 +42,7 @@ header{
     font-weight: 700;
     max-width: 500px;
     margin-top: 110px;
+    opacity: 0;
 }
 .container .header-info .section-detail{
     font-size: 14px;
@@ -47,6 +51,27 @@ header{
     max-width: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
+    opacity: 0;
+}
+.slid-left{
+    animation: slidleft 1s linear forwards;
+    overflow: hidden;
+}
+@keyframes slidleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+p.slid-left{
+    animation-delay: 1s;
+}
+.btn-1.slid-left{
+    animation-delay: 2s;
 }
 /*------------------------------------------------------------------------
 ----------- top player image -------------------------------------------- */
@@ -65,6 +90,187 @@ header{
     font-size: 20px;
     border: none;
     margin-bottom: 110px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+}
+.btn-1:hover{
+    background-color: red;
 }
 /*----------------------------------------------------------------------------
 --------------------- Section Two Upcoming matches --------------------------- */
+
+/*-------------------- match card start----------------------------------- */
+.section-two .sec-two-container .grid-item .match-card{
+    width: 280px;
+    height: 362px;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+    margin: 0%;
+    padding: 0%;
+}
+.match-card .card-iamge{
+    width: 278px;
+    height: 175px;
+    background-image: url(image/Blog\ Image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+}
+.match-card .card-text{
+    padding: 20px;
+}
+.match-card .card-text button{
+    width: 100px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #161616;
+    border-radius: 5px;
+    border: 1px solid #161616;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.match-card .card-text button:hover{
+    color: #FFFF;
+    background-color: #313131;
+}
+.match-card .card-text p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #161616;
+    margin-bottom: 20px;
+}
+.match-card .card-text span, .match-card .card-text span i{
+    font-size: 20px;
+    font-weight: 400;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.match-card .card-text .span1{
+    margin-right: 30px;
+}
+.match-card .card-text .span2:hover{
+    cursor: pointer;
+}
+/*----------------------------------------------------------------------- */
+/* -------------------------section two flex  -------------------------------*/
+.sec-two-container{
+    display: flex;
+    justify-content: space-between;
+}
+/*----------------------------------------------------------------------- */
+/* -------------------------section two flex item-----------------------------*/
+/*----------------- main card --------------- */
+.sec-two-container .flex-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    height: 300px;
+    background-color:  #161616;
+    border-radius: 10px;
+}
+/* ----------------card content ------------------------------------------ */
+.sec-two-container .flex-item .upcoming-match-card{
+    width: 200px;
+    height: 50px;
+    background-color: #FFFF;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #161616;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.sec-two-container .flex-item .item-3, .item-2, .item-1{
+    border: none;
+}
+.btn-2 a{
+    text-decoration: none;
+    color: #161616;
+}
+.btn-2 .link-3{
+    color: #FFFF;
+}
+.sec-two-container .flex-item .item-3{
+    background-color: #d00;
+    color: #FFFF;
+}
+.sec-two-container .flex-item .item-1{
+    margin-top: 30px;
+}
+/* -------------------------------------------------------------------
+-------------------section two grid items --------------------------------*/
+.section-two .sec-two-container .grid-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    column-gap: 24px;
+}
+.sec-two-container{
+    margin-bottom: 120px;
+}
+/* Button for tablet or mobile device */
+.for-tablet{
+    background-color: #d00;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFF;
+    margin-top: 50px;
+    margin-left: 300px;
+    display: none;
+    cursor: pointer;
+}
+/*----------------------------------------------------------------------------
+---------------------------- Footer------------------------------------------ */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: #161616;
+}
+.goal{
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFF;
+    margin-top: 50px;
+}
+hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid #313131;
+}
+.footer-links a{
+    color: #B9B9B9;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-links a:hover{
+    color: #FFFF;
+}
+.social-icon{
+    font-size: 30px;
+    color: #B9B9B9;
+}
+.social-icon i{
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.social-icon i:hover{
+    color: #FFFF;
+}
