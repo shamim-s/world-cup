@@ -208,21 +208,11 @@ p.slid-left{
     column-gap: 24px;
 }
 .sec-two-container{
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 }
 /* Button for tablet or mobile device */
-.for-tablet{
-    background-color: #d00;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #FFFF;
-    margin-top: 50px;
-    margin-left: 300px;
+section .for-tablet{
     display: none;
-    cursor: pointer;
 }
 /*----------------------------------------------------------------------------
 ---------------------------- Footer------------------------------------------ */
@@ -272,7 +262,7 @@ hr{
 }
 /*-----------------------------------------------------------------------------
 ---------------------- media querie for mobile  ----------------------------*/
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 600px and up) */
 @media only screen and (max-width: 600px) {
     .main-body{
         width: 100%;
@@ -400,4 +390,137 @@ footer{
     font-size: 25px;
     color: #B9B9B9;
 }
+}
+/*-----------------------------------------------------------------------------
+---------------------- media querie for tablet  ----------------------------*/
+/* Medium devices (landscape tablets, 992px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    .main-body{
+        width: 100%;
+        padding: 30px 30px 0px 30px;
+    }
+    header{
+        width: 100%;
+        height: 398px;
+        background-color: #161616;
+        border-radius: 30px;
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .header-image img{
+        width: 323px;
+        max-height: 340px;
+        margin-top: 60px;
+        margin-right: 20px;
+    }
+    .container .header-info .section-title{
+        font-size: 30px;
+        color: #FFFF;
+        font-weight: 700;
+        max-width: 250px;
+        margin-top: 110px;
+        opacity: 0;
+    }
+    .container .header-info .section-detail{
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFF;
+        max-width: 250px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        opacity: 0;
+    }
+    .header-info{
+        width: 50%;
+    }
+    .header-image{
+        width: 50%;
+    }   
+    .head-p-text{
+        display: none;
+    }
+    section .for-tablet{
+        background-color: #d00;
+        padding: 10px 40px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #FFFF;
+        margin-top: 10px;
+        margin-left: 300px;
+        cursor: pointer;
+        margin-bottom: 40px;
+        display: block;
+    }
+    /* grid items  */
+    .section-two .sec-two-container .grid-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+    /* flex items  */
+    .sec-two-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .for-hide{
+        display: none;
+    }
+   .section-two .sec-two-container .flex-item{
+    width: 80%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+    align-items: center;
+    }
+    
+    .sec-two-container .flex-item .item-3{
+        background-color: #DD0000;
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-1, .item-2{
+        border: 2px solid #313131;
+    }
+    .sec-two-container .flex-item .item-2{
+        border: 2px solid #313131;
+    }
+    .sec-two-container .flex-item .upcoming-match-card{
+        width: 180px;
+        height: 50px;
+        background-color: #FFFF;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #161616;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    .sec-two-container .flex-item .item-3, .item-2, .item-1{
+        border: none;
+    }
+    .btn-2 a{
+        text-decoration: none;
+        color: #161616;
+    }
+    .btn-2 .link-3{
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-3{
+        background-color: #d00;
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-1{
+        margin-top: 0px;
+    }
 }
