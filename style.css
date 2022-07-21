@@ -30,6 +30,9 @@ header .container{
     width: 50%;
 }
 .header-image{
+    vertical-align: bottom;
+    margin: 0%;
+    padding: 0%;
     width: 50%;
 }   
 /*---------------------------------------------------------------------
@@ -73,9 +76,10 @@ p.slid-left{
 /*------------------------------------------------------------------------
 ----------- top player image -------------------------------------------- */
 .header-image img{
+    vertical-align: bottom;
     width: 540px;
     height: 540px;
-    margin-top: 80px;
+    margin-top: 82px;
     margin-right: 20px;
 }
 /* --------------------------------------------------------------------------
@@ -313,15 +317,19 @@ hr{
     .container .header-info .section-detail .head-p-text{
         display: none;
     }
+/*------------------------------- header button ------------------------------------------------ */
     .btn-1{
         font-size: 12px;
         margin-bottom: 30px;
     }
+/*------------------------------ Header image ------------------------------------------------ */
     .header-image img{
+        vertical-align: bottom;
         width: 233px;
         height: 245px;
     }
-    /* section two  */
+    /* ---------------------------------------------------------------------------------------------
+    ----------------------------section two ------------------------------------------------ */
     .sec-two-container{
         display: flex;
         flex-direction: column;
@@ -341,6 +349,7 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         column-gap: 24px;
     }
+/*--------------------- Upcoming match three button ----------------------------------------- */
     .sec-two-container .flex-item .upcoming-match-card{
         width: 200px;
         height: 50px;
@@ -414,9 +423,10 @@ footer{
         align-items: center;
     }
     .header-image img{
+        vertical-align: bottom;
         width: 323px;
         max-height: 340px;
-        margin-top: 60px;
+        margin-top: 57px;
         margin-right: 20px;
     }
     .container .header-info .section-title{
